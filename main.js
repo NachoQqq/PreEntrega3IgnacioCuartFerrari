@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
             productList.appendChild(productCard);
         });
 
-        // Añadir eventos a los botones de "Agregar al Carrito"
         document.querySelectorAll('.add-to-cart').forEach(button => {
             button.addEventListener('click', (e) => {
                 const id = parseInt(e.target.dataset.id);
@@ -33,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Refrescar AOS después de renderizar los productos
         AOS.refresh();
     };
 
@@ -79,10 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
         cartTotalElement.textContent = total.toFixed(2);
     
-        // Añadir eventos a los botones de "Eliminar"
         document.querySelectorAll('.remove-item').forEach(button => {
             button.addEventListener('click', (e) => {
-                e.stopPropagation(); // Detiene la propagación del evento para que no se cierre el carrito
+                e.stopPropagation(); 
                 const index = parseInt(e.target.dataset.index);
                 removeFromCart(index);
             });
@@ -103,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Función para abrir el carrito
     const openCart = () => {
-        renderCart(); // Renderizar el carrito cada vez que se abra
+        renderCart(); 
         cartSidebar.classList.add('active');
     };
 
@@ -112,10 +109,8 @@ document.addEventListener('DOMContentLoaded', () => {
         cartSidebar.classList.remove('active');
     };
 
-    // Evento para abrir el carrito cuando se hace clic en el botón "Ver Carrito"
     viewCartButton.addEventListener('click', openCart);
 
-    // Evento para cerrar el carrito cuando se hace clic fuera de la sidebar
     document.addEventListener('click', (e) => {
         if (!cartSidebar.contains(e.target) && !viewCartButton.contains(e.target)) {
             closeCart();
@@ -138,8 +133,8 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('./products.json')
         .then(response => response.json())
         .then(data => {
-            products = data;  // Almacena todos los productos en la variable "products"
-            renderProducts(products);  // Renderiza todos los productos inicialmente
+            products = data;  
+            renderProducts(products);  
         })
         .catch(error => console.error('Error al cargar los productos:', error));
 });
@@ -153,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const featuredList = document.getElementById('featured-list'); // Contenedor para productos destacados
     let products = [];
 
-    // Función para renderizar productos en un contenedor específico
+    // Función para renderizar productos en contenedor específico
     const renderProducts = (productArray, container) => {
         container.innerHTML = '';
         productArray.forEach(({ id, name, price, img }) => {
@@ -172,7 +167,6 @@ document.addEventListener('DOMContentLoaded', () => {
             container.appendChild(productCard);
         });
 
-        // Añadir eventos a los botones de "Agregar al Carrito"
         document.querySelectorAll('.add-to-cart').forEach(button => {
             button.addEventListener('click', (e) => {
                 const id = parseInt(e.target.dataset.id);
@@ -180,7 +174,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Refrescar AOS después de renderizar los productos
         AOS.refresh();
     };
 

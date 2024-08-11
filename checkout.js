@@ -39,6 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Cerrar la alerta cuando se haga clic en el botón "Cerrar"
     closeAlertButton.addEventListener('click', () => {
         alertBox.style.display = 'none';
-        window.location.href = 'index.html'; // Redirigir a la página principal o a la que prefieras
+        window.location.href = 'index.html'; // Redirigir a la página principal
     });
 });
