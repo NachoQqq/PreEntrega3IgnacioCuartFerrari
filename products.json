@@ -1,0 +1,13 @@
+[
+    { "id": 1, "name": "Air Jordan 1 High \"Dark Mocha\"", "price": 500, "img": "./assets/sneaker1.jpg", "featured": true},
+    { "id": 2, "name": "Air Jordan 4 \"Military Black\"", "price": 440, "img": "./assets/sneaker2.jpg", "featured": false },
+    { "id": 3, "name": "Hoodie Essentials", "price": 110, "img": "./assets/hoodie1.jpg", "featured": false },
+    { "id": 4, "name": "Hoodie Kisses V2", "price": 150, "img": "./assets/kissesv2.jpg", "featured": false },
+    { "id": 5, "name": "Hoodie Flyorange", "price": 150, "img": "./assets/flyorange.jpg", "featured": false },
+    { "id": 6, "name": "Air Jordan 1 High \"Black and White\"", "price": 270, "img": "./assets/Jordan1BaW.jpg", "featured": false },
+    { "id": 7, "name": "Air Jordan 1 High \"Travis Scott x Fragment\"", "price": 2150, "img": "./assets/Jordan1TVxF.jpg", "featured": true },
+    { "id": 8, "name": "Campus 00s \"Core Black\"", "price": 140, "img": "./assets/Campus00sCB.jpg", "featured": false },
+    { "id": 9, "name": "Air Jordan 4 \"Military Blue\"", "price": 150, "img": "./assets/JordanR4MB.jpg", "featured": false },
+    { "id": 10, "name": "Vans Knu \"Disney\"", "price": 140, "img": "./assets/VKNUD.jpg", "featured": true },
+    { "id": 11, "name": "Vans Knu", "price": 100, "img": "./assets/VKNUb.jpg", "featured": false }
+]
